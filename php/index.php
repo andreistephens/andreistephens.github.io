@@ -15,6 +15,7 @@
 
 			if (mail($email, $)) {
 				$successMessage = "Thanks for registering!";
+				
 			} else {
 				$emailStatus = "Something went wrong! Please try again."
 			}
@@ -25,8 +26,5 @@
 		}
 	}
 
-	public function registrationEmail() {
-		//TODO send welcome/register email to new user
-	}
 
 ?>
