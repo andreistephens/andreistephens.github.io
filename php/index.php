@@ -1,4 +1,7 @@
 <? php
+	
+	$emails = array();
+
 	class user(){
 		public $email;
 		public $password = "guest";
@@ -14,7 +17,8 @@
 			$headers = "From: aynsubscribe@gmail.com";
 
 			if (mail($email, $)) {
-				$successMessage = "Thanks for registering!";
+				$emailStatus = "Thanks for registering!";
+				array_push($emails, $email);
 				
 			} else {
 				$emailStatus = "Something went wrong! Please try again."
