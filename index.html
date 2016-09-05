@@ -14,6 +14,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
  <style>
 
@@ -23,7 +24,7 @@
  	 	
  #topContainer {
  	 	 background-image:url("background.jpg");
- 	 	 height:400px;
+ 	 	 height:800px;
  	 	 width:100%;
  	 	 background-size:cover;
  	 	 }
@@ -68,7 +69,9 @@
  #details {
  		 background-image:url("falls.jpg");
  	 	 background-color:#B0D1FB;
+ 	 	 background-size: cover;
  	 	 padding-top:70px;
+ 	 	 height: 800px;
  	 	 width:100%;
 
  }
@@ -98,21 +101,15 @@
  	 	 <div class="collapse navbar-collapse">
  	 	 	 <ul class="nav navbar-nav">	 	
  	 	 	 	 <li class="active"><a href="#topContainer">Home</a></li>
- 	 	 	 	 <li><a href="#details">
- 	 	 	 	 	About</a></li>
- 	 	 	 	 <li><a href="#footer">Download</a></li>
+ 	 	 	 	 <li><a href="#details">About</a></li>
+ 	 	 	 	 <!--<li><a href="#footer">Download</a></li>-->
  	 	 	 </ul>
  	 	 	 <form class="navbar-form navbar-right">
  	 	 	 	 <div class="form-group">
- 	 	 	 	 	 <input type="email" placeholder="Email"
-class="form-control" />
+ 	 	 	 	 	 <input type="email" placeholder="Email" class="form-control" />
  	 	 	 	 </div>
- 	 	 	 	 <div class="form-group">
- 	 	 	 	 	 <input type="password" placeholder="Password"
-class="form-control" />
- 	 	 	 	 </div>
- 	 	 	 	 <button type="submit" name ="login" class="btn btn-success">Log In</
-button>
+ 	 	 	 	
+ 	 	 	 	 <button type="submit" name ="subscribe" class="btn btn-success">Sign up</button>
  	 	 	 </form>
  	 	 	 	
  	 	 </div>
@@ -129,9 +126,6 @@ button>
  	 	 	
  	 	 <p class="lead">FOMO is no mo.</p>
  	 	 	
-<!-- 	 	 <p>Some more information about the app. You can go into a little
-more detail here if you want to.</p> -->
- 	 	 	
  	 	 <p class="bold marginTop">Interested? Join our mailing list!</p>
  	 	 	
  	 	 <form class="marginTop">
@@ -139,24 +133,17 @@ more detail here if you want to.</p> -->
  	 	 	 <div class="input-group">
  	 	 	 	 <span class="input-group-addon">@</span>
  	 	 	 	 	
- 	 	 	 	 <input type="email" class="form-control"
-placeholder="Your email" />
+ 	 	 	 	 <input type="email" class="form-control" placeholder="Your email" />
  	 	 	 	 	
  	 	 	 </div>
  	 	 	 	 	
  	 	 	 	 <input type="submit" name="emailSignup" class="btn btn-success btn-lg
 marginTop" />
- 	 	 	 	
- 	 	 	 	
- 	 	 	
  	 	 	
  	 	 </form>
  	 	 	
- 	 	 	<?php echo $emailStatus; ?>
- 	 	 	
  	 	 </div>
- 	 	
- 	 	
+
  </div>
 
  </div>
@@ -191,7 +178,7 @@ marginTop" />
  	 	 	
  	 	 <div class="col-md-4 marginTop">
  	 	 <h2><span class="glyphicon glyphicon-pencil"></span> Thought</h2>
- 	 	 <p>What's going on? Why is it important? You know what everyone will be saying about it...next week.</p>
+ 	 	 <p>You know what everyone will be saying about it next week.</p>
  	 	 <button class="btn btn-success marginTop">Sign Up!</button>
  	 	 	
  	 	 </div>
@@ -199,7 +186,7 @@ marginTop" />
  </div>
  </div>
 
- <div class="container contentContainer" id="footer">
+ <!--<div class="container contentContainer" id="footer">
 
  <div class="row">
  	 	
@@ -228,34 +215,17 @@ placeholder="Your email" />
  	 	 	 	 <input type="submit" name="emailSignup" class="btn btn-success btn-lg
 marginTop" />
  	 	 	 	
- 	 	 	 	
- 	 	 	
- 	 	 	
  	 	 </form>
- 	 	 	
- 	 	 	
  	 	 	
  	 	 </div>
  	 	
  	 	
  </div>
  	 	
- </div>
+ </div>-->
 
 
  </div>
 
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
-jquery.min.js"></script>
- <!-- Include all compiled plugins (below), or include individual files as
-needed -->
- <script src="js/bootstrap.min.js"></script>
-
- <script>
-
- $(".contentContainer").css("min-height",$(window).height());
- 
- </script>
  </body>
 </html>
